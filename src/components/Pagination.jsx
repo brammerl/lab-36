@@ -1,6 +1,19 @@
 import React from 'react';
-import usePagination from '../../hooks/appContext';
+import { useDispatch } from '../hooks/appContext';
 
-const Pagination = () => {
-  const page = usePagination();
+const Pagination = ({page}) => {
+  const dispatch = useDispatch();
 
+  const increment = () => dispatch({type: 'ADD_PAGE'});
+  const decrement = () => dispatch({type: 'SUB_PAGE'});
+
+  return (
+    <>
+      Page: {page}
+      <button onClick={decrement}>Prev</button>
+      <button onClick={increment}>Next</button>
+    </>
+  )
+};
+
+export default Pagination;
