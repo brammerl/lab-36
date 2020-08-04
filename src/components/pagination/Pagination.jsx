@@ -1,9 +1,8 @@
 import React from 'react';
-import { useDispatch } from '../hooks/appContext';
+import { useDispatch } from '../../hooks/appContext';
 
-const Pagination = ({page}) => {
-  const dispatch = useDispatch();
-
+const Pagination = ({page, dispatch}) => {
+  
   const increment = () => dispatch({type: 'ADD_PAGE'});
   const decrement = () => dispatch({type: 'SUB_PAGE'});
 

@@ -2,10 +2,7 @@ import React from 'react';
 
 import Switch from '@material-ui/core/Switch';
 import { useTheme, useDispatch } from '../../hooks/appContext'
-const SwitchComponent = () => {
-  const theme = useTheme();
-  const dispatch = useDispatch();
-
+const SwitchComponent = ({dispatch}) => {
   const handleChange = () => {
     dispatch({ type: 'TOGGLE_THEME'})
   }

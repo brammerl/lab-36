@@ -1,5 +1,3 @@
-@import '../../styles/variables.css';
-
 .Character {
   display: grid;
   grid-template-columns: 1fr 5fr;

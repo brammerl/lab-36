@@ -2,10 +2,8 @@ import React from 'react';
 import { useCharacter, useTheme } from '../../hooks/appContext';
 import styles from './Character.css';
 
-const Character = () => {
-  const character = useCharacter();
-  const theme = useTheme();
-
+const Character = ({theme, character}) => {
+  
   if(!character) return <h1>Loading!</h1>;
 
   const characterList = character.map(character => {

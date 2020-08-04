@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pagination component renders Pagination 1`] = `
+<Fragment>
+  Page: 
+  <button
+    onClick={[Function]}
+  >
+    Prev
+  </button>
+  <button
+    onClick={[Function]}
+  >
+    Next
+  </button>
+</Fragment>
+`;
