@@ -5,7 +5,7 @@ import {
   Route
 } from 'react-router-dom';
 import MainContainer from '../../containers/MainContainer';
-import AppProvider from '../../providers/AppProvider';
+import AppProvider from '../../providers/appProvider';
 
 
 export default function App() {
