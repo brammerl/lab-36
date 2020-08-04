@@ -2,8 +2,16 @@
 
 exports[`App component renders App 1`] = `
 <Fragment>
-  <Character />
-  <SwitchComponent />
-  <Pagination />
+  <BrowserRouter>
+    <AppProvider>
+      <Switch>
+        <Route
+          component={[Function]}
+          exact={true}
+          path="/"
+        />
+      </Switch>
+    </AppProvider>
+  </BrowserRouter>
 </Fragment>
 `;
