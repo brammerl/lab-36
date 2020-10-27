@@ -1,0 +1,25 @@
+.Character {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  transition: .2s;
+
+  img {
+    width: 10rem;
+  }
+
+  
+}
+
+.Character-light{
+  composes: Character;
+
+  background-color: white;
+  color: black;
+}
+
+.Character-dark {
+  composes: Character;
+
+  background-color: darkgrey;
+  color: white;
+}

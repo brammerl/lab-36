@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Switch component renders Switch 1`] = `
+<div>
+  <WithStyles(ForwardRef(Switch))
+    inputProps={
+      Object {
+        "aria-label": "secondary checkbox",
+      }
+    }
+    name="checkedA"
+    onChange={[Function]}
+  />
+</div>
+`;
